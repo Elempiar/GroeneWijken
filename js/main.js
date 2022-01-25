@@ -60,7 +60,7 @@ $("#btnScroll").click(function () {
 // HOVER EFFECT
 
 const TEXT_HOVER_1 = "Flexibiliteit in ontwikkelingen";
-const TEXT_HOVER_2 = "Modulair Bouwen";
+const TEXT_HOVER_2 = "Modulair Bouwen & CLT";
 const TEXT_HOVER_3 = "Afname Auto Verkeer";
 const TEXT_HOVER_5 = "Agro Forestry";
 const TEXT_HOVER_6 = "Water Veiligheid & Zekerheid";
