@@ -8,7 +8,9 @@ const documentCenter = ($(document).width() - $(window).width()) / 2;
 const SCROLL_SPEED = 10;
 
 $(document).ready(function () {
+
     scrollTo(documentCenter, 0);
+
     let isScrolling = false;
     let scrollDirection = null;
 
@@ -57,12 +59,12 @@ $("#btnScroll").click(function () {
 
 // HOVER EFFECT
 
-const TEXT_HOVER_1 = "HOVER c1";
-const TEXT_HOVER_2 = "HOVER c2";
-const TEXT_HOVER_3 = "HOVER c3";
-const TEXT_HOVER_5 = "HOVER c5";
-const TEXT_HOVER_6 = "HOVER c6";
-const TEXT_HOVER_7 = "HOVER c7";
+const TEXT_HOVER_1 = "Flexibiliteit in ontwikkelingen";
+const TEXT_HOVER_2 = "Modulair Bouwen";
+const TEXT_HOVER_3 = "Afname Auto Verkeer";
+const TEXT_HOVER_5 = "Agro Forestry";
+const TEXT_HOVER_6 = "Water Veiligheid & Zekerheid";
+const TEXT_HOVER_7 = "Geothermie";
 
 $(".hover").hover(function () {
 

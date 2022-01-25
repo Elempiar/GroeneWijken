@@ -64,6 +64,7 @@ h1{
 .hover{
   filter: grayscale(100);
   transition: 1s ease all;
+  cursor: pointer;
 }
 #c1{
   position: absolute;
@@ -72,8 +73,8 @@ h1{
 }
 #c2{
   position: absolute;
-  bottom: 322px;
-  left: 1107px;
+  bottom: 312px;
+  left: 1070px;
 }
 #c3{
   position: absolute;
