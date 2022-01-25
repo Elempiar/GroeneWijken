@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,800;1,400&display=swap');
+
+
+  /* NAV */
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+  
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#scrollRight {
+  height: 100vh;
+  width: 15%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
+}
+
+#scrollLeft {
+  height: 100vh;
+  width: 15%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+
+  /* STYLING */
+
+body{
+  background: rgba(38,159,215,1);
+  font-family: 'Exo 2', sans-serif;
+}
+.container{
+  position: relative;
+  height: 100vh;
+  width: 7560px;
+}
+.container #bg{
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+h1{
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 800;
+  font-size: 4em;
+  color: #1C79A3;
+}
+
+.hover{
+  filter: grayscale(100);
+  transition: 1s ease all;
+}
+#c1{
+  position: absolute;
+  bottom: 320px;
+  left: 243px;
+}
+#c2{
+  position: absolute;
+  bottom: 322px;
+  left: 1107px;
+}
+#c3{
+  position: absolute;
+  bottom: 162px;
+  left: 2688px;
+}
+#c5{
+  position: absolute;
+  bottom: 175px;
+  right: 2197px;
+}
+#c6{
+  position: absolute;
+  bottom: 155px;
+  right: 1236px;
+}
+#c7{
+  position: absolute;
+  bottom: 320px;
+  right: 140px;
+}
+
+.button{
+  width: 200px;
+  height: 30px;
+  background: white;
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  text-align: center;
+  line-height: 30px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-weight: 800;
+  transform: translateX(-50%);
+}
