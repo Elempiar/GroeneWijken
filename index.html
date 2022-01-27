@@ -11,13 +11,32 @@
 </head>
 
 <body>
+    <div id="overlay">
+        <iframe id="intro-video" src="https://www.youtube-nocookie.com/embed/AUn14ns4GQk" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+        <div id="intro-text">
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, cupiditate non sapiente enim nisi
+                deleniti voluptatibus, ratione quisquam fugiat quos, sed perferendis molestias magni quaerat dolorum
+                iusto animi? Vitae, reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                reiciendis molestiae soluta quia mollitia, quibusdam aliquam delectus totam, iusto modi voluptate
+                voluptas eaque eius distinctio? Quo perspiciatis beatae nisi exercitationem!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti at repudiandae delectus vitae magnam
+                perferendis expedita eligendi a ullam quidem odit reiciendis exercitationem, pariatur fugit eaque enim
+                soluta aperiam inventore!</p>
+        </div>
+        <a class="btn" id="btnContinue">
+            Ontdek Meer
+        </a>
+    </div>
+
     <div id="scrollLeft"></div>
     <div id="scrollRight"></div>
-
-
-
-    <div class="container">
-        <img id="bg" src="src/background.png" alt="">
+    <div class="map">
+        <img id="bg" src="src/background.png">
 
         <img id="c1" class="hover" src="src/click_1.png">
         <img id="c2" class="hover" src="src/click_2.png">
@@ -25,12 +44,6 @@
         <img id="c5" class="hover" src="src/click_5.png">
         <img id="c6" class="hover" src="src/click_6.png">
         <img id="c7" class="hover" src="src/click_7.png">
-
-    </div>
-
-
-    <div class="button" id="btnScroll">
-        center
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
