@@ -41,7 +41,7 @@ $(document).ready(function () {
 
 // SCROLL NAV
 
-const FRAME_DURATION = 1000 / 60; // 60fps frame duration
+const FRAME_DURATION = 1000 / 60;
 const getTime = typeof performance === "function" ? performance.now : Date.now;
 
 const documentCenter = ($(document).width() - $(window).width()) / 2;
@@ -59,8 +59,7 @@ $(document).ready(function () {
         const now = getTime();
         const delta = (now - lastDelta) / FRAME_DURATION;
 
-        const toScroll =
-            (scrollDirection == "right" ? 1 : -1) * (SCROLL_SPEED * delta);
+        const toScroll = (scrollDirection == "right" ? 1 : -1) * (SCROLL_SPEED * delta);
 
         scrollTo(window.scrollX + toScroll, 0);
         lastDelta = now;
@@ -73,6 +72,7 @@ $(document).ready(function () {
         scrollDirection = "right";
         isScrolling = true;
         lastDelta = getTime();
+        $("#tut").fadeOut(500);
 
         scrollDelta();
     });
@@ -80,6 +80,7 @@ $(document).ready(function () {
         scrollDirection = "left";
         isScrolling = true;
         lastDelta = getTime();
+        $("#tut").fadeOut(500);
 
         scrollDelta();
     });
