@@ -6,7 +6,7 @@ $(document).ready(function () {
     $("#intro-video").hide();
     $("#intro-text").hide();
     $("#btnContinue").hide();
-    $("<h1>" + TEXT_TITEL + "</h1>").hide().prependTo("#overlay").fadeIn(2000).fadeOut(3000);
+    $("<h1>" + TEXT_TITEL + "</h1>").hide().prependTo("#intro").fadeIn(2000).fadeOut(3000);
     showVideo();
 
     function showVideo() {
@@ -31,7 +31,7 @@ $(document).ready(function () {
             $("#intro-video").fadeOut(1000);
             showText();
         } else if (btnID == "btnOverlay") {
-            $("#overlay").css("top", "-100vh");
+            $("#intro").css("top", "-100vh");
             scrollTo(documentCenter, 0);
         }
     });
