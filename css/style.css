@@ -332,11 +332,27 @@ h2{
 }
 
   /* DOS MOBILE  */
-  @media only screen and (max-width: 900px) {
-    #scrollLeft, #scrollRight, #tut, #scroller, #loader, #intro{
-      display: none;
-    }
-    #mobileError{
-      display: block;
-    }
+@media only screen and (max-width: 900px) {
+  #scrollLeft, #scrollRight, #tut, #scroller, #loader, #intro{
+    display: none;
   }
+  #mobileError{
+    display: block !important;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(-45deg, #249D57, #196e50);
+    text-align: center;
+  }
+  #mobileError p{
+    display: block;
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    font-family: 'Exo 2', sans-serif;
+  }
+}
+#mobileError{
+  display: none;
+}

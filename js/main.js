@@ -1,4 +1,4 @@
-// Overlay //
+// OVERLAY
 
 const TEXT_TITEL = "Groene Wijken";
 

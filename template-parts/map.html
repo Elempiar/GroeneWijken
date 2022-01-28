@@ -55,16 +55,12 @@
     const getTime = typeof performance === "function" ? performance.now : Date.now;
 
     const documentCenter = ($('.map').width() - $(window).width()) / 2;
+    const SCROLL_SPEED = 10;
 
     scroller.scroll(documentCenter, 0)
 
-
-    const SCROLL_SPEED = 10;
-
-
     let isScrolling = false;
     let scrollDirection = null;
-
     let lastDelta = getTime();
 
     function scrollDelta() {
