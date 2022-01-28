@@ -22,6 +22,12 @@ $(document).ready(function () {
         }, 1000);
     }
 
+    function removeIntro() {
+        setTimeout(function () {
+            $("#intro").remove();
+        }, 1000);
+    }
+
     $(".btn").click(function () {
 
         const btnID = $(this).attr("id");
@@ -32,98 +38,35 @@ $(document).ready(function () {
             showText();
         } else if (btnID == "btnOverlay") {
             $("#intro").css("top", "-100vh");
-            scrollTo(documentCenter, 0);
+            $("#loader").css("z-index", "8");
+            removeIntro();
+
         }
     });
 
 });
 
 
-// SCROLL NAV
+// LOADING SCREEN
 
-const FRAME_DURATION = 1000 / 60;
-const getTime = typeof performance === "function" ? performance.now : Date.now;
-
-const documentCenter = ($(document).width() - $(window).width()) / 2;
-
-const SCROLL_SPEED = 10;
-
-$(document).ready(function () {
-
-    let isScrolling = false;
-    let scrollDirection = null;
-
-    let lastDelta = getTime();
-
-    function scrollDelta() {
-        const now = getTime();
-        const delta = (now - lastDelta) / FRAME_DURATION;
-
-        const toScroll = (scrollDirection == "right" ? 1 : -1) * (SCROLL_SPEED * delta);
-
-        scrollTo(window.scrollX + toScroll, 0);
-        lastDelta = now;
-        if (isScrolling) {
-            requestAnimationFrame(scrollDelta);
-        }
-    }
-
-    $("#scrollRight").mouseover(function () {
-        scrollDirection = "right";
-        isScrolling = true;
-        lastDelta = getTime();
-        $("#tut").fadeOut(500);
-
-        scrollDelta();
-    });
-    $("#scrollLeft").mouseover(function () {
-        scrollDirection = "left";
-        isScrolling = true;
-        lastDelta = getTime();
-        $("#tut").fadeOut(500);
-
-        scrollDelta();
-    });
-    $("#scrollRight").mouseout(function () {
-        isScrolling = false;
-    });
-    $("#scrollLeft").mouseout(function () {
-        isScrolling = false;
-    });
-});
-
-
-// HOVER EFFECT
-
-const TEXT_HOVER_1 = "Flexibiliteit in ontwikkelingen";
-const TEXT_HOVER_2 = "Modulair Bouwen & CLT";
-const TEXT_HOVER_3 = "Afname Auto Verkeer";
-const TEXT_HOVER_5 = "Agro Forestry";
-const TEXT_HOVER_6 = "Water Veiligheid & Zekerheid";
-const TEXT_HOVER_7 = "Geothermie";
-
-$(".hover").hover(function () {
-
-    const hoverID = $(this).attr("id");
-
-    $(this).css("filter", "grayscale(0)");
-
-    if (hoverID == "c1") {
-        $("<h2>" + TEXT_HOVER_1 + "</h2>").hide().prependTo(".map").fadeIn(500);
-    } else if (hoverID == "c2") {
-        $("<h2>" + TEXT_HOVER_2 + "</h2>").hide().prependTo(".map").fadeIn(500);
-    } else if (hoverID == "c3") {
-        $("<h2>" + TEXT_HOVER_3 + "</h2>").hide().prependTo(".map").fadeIn(500);
-    } else if (hoverID == "c5") {
-        $("<h2>" + TEXT_HOVER_5 + "</h2>").hide().prependTo(".map").fadeIn(500);
-    } else if (hoverID == "c6") {
-        $("<h2>" + TEXT_HOVER_6 + "</h2>").hide().prependTo(".map").fadeIn(500);
-    } else if (hoverID == "c7") {
-        $("<h2>" + TEXT_HOVER_7 + "</h2>").hide().prependTo(".map").fadeIn(500);
-    }
-
-}, function () {
-    $("h2").fadeOut("500", function () {
-        $(this).remove();
-    });
+$.ajax({
+    url: '/template-parts/map.html',
+    beforeSend: function () {
+        $('body').prepend('<div id="loader"><h4>loading</h4></div>');
+        $('#loader').append('<div id="load1" class="loading foop">  </div> <div id="load2" class="loading foop">  </div> <div id="load3" class="loading foop">  </div>');
+        setTimeout(function () {
+            $('.loading').removeClass('foop');
+        }, 2500);
+    },
+    success: function (data) {
+        $(data).find('#bg').on('load', function () {
+            $('body').prepend(data);
+            $('.loading').removeClass('Loop');
+            $(".loading").addClass('poof');
+            $('#loader').addClass('loaderOut');
+            setTimeout(function () {
+                $('#loader').remove();
+            }, 2400);
+        });
+    },
 });

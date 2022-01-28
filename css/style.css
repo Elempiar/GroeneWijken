@@ -13,9 +13,7 @@ html {
   font-size: 18px;
   line-height: 1.5em;
 }
-body::-webkit-scrollbar {
-  display: none;
-}
+
 #tut{
   z-index: 4;
   position: fixed;
@@ -90,7 +88,7 @@ body{
   font-family: 'Roboto', sans-serif;
   font-size: 16pt;
 }
-h1, h2, h3, .btn{
+h1, h2, h3, h4, .btn{
   font-family: 'Exo 2', sans-serif;
 }
 .btn{
@@ -121,7 +119,7 @@ h1, h2, h3, .btn{
   height: 100vh;
   width: 100vw;
   position: fixed;
-  z-index: 6;
+  z-index: 7;
   top: 0;
   transition: 1s ease top;
   background: linear-gradient(-45deg, #249D57, #196e50);
@@ -245,3 +243,100 @@ h2{
   bottom: 320px;
   right: 140px;
 }
+
+
+  /* LOADING SCREEN  */
+
+#loader{
+  background: linear-gradient(-45deg, #249D57, #196e50);
+	background-size: 100% 100%;
+  width: 100vw;
+  height: 100vh;
+  z-index: 6;
+  position: fixed;
+  top: 0vw;
+}
+#loader h4{
+  font-size: 6em;
+  text-align: center;
+  line-height: 100vh;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.3);
+}
+  
+  /* Overlay animation */
+
+.loaderOut {
+  animation: out 2s ease;
+  animation-delay: .5s;
+}
+.loaded{
+  display: none;
+}
+
+@keyframes out {
+  0%{ top: 0vw; }
+  100%{ top: -100vw; }
+}
+  
+  /* Loading animation */
+    
+.loading{
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: calc(50% + 35px);
+  left: calc(50% + 320px);
+  z-index: 7;
+  animation: loop 3s ease-in-out infinite;
+}
+  
+#load1{
+  animation-delay: .3s;
+}
+#load2{
+  margin-left: 30px;
+  animation-delay: .4s;
+}
+#load3{
+  margin-left: 60px;
+  animation-delay: .5s;
+}
+.foop{
+  animation: foop 2s 1;
+}
+.poof{
+  animation: poof 1s 1;
+}
+    
+@keyframes foop {
+  0% {   top: -120vh;}
+  70% {	top: calc(50% + 75px);}
+  100% {	top: calc(50% + 35px);}
+}
+    
+@keyframes loop {
+  0% {   top: calc(50% + 35px);}
+  30% {   top: calc(50% + 5px);}
+  60% {   top: calc(50% + 75px);}
+  1000% {   top: calc(50% + 35px);}
+}
+    
+@keyframes poof {
+  0% {   top: calc(50% + 35px);}
+  100% {	top: -50vh;}
+}
+
+  /* DOS MOBILE  */
+  @media only screen and (max-width: 900px) {
+    #scrollLeft, #scrollRight, #tut, #scroller, #loader, #intro{
+      display: none;
+    }
+    #mobileError{
+      display: block;
+    }
+  }

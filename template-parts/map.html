@@ -1,0 +1,146 @@
+<div id="scrollLeft"></div>
+<div id="scrollRight"></div>
+<div id="tut">
+    <div class="overlay-text">
+        <h3>Lorem Ipsum</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, cupiditate non sapiente enim nisi
+            deleniti voluptatibus, ratione quisquam fugiat quos, sed perferendis molestias magni quaerat dolorum
+            iusto animi? Vitae, reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+            reiciendis molestiae soluta quia mollitia, quibusdam aliquam delectus totam, iusto modi voluptate
+            voluptas eaque eius distinctio? Quo perspiciatis beatae nisi exercitationem!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti at repudiandae delectus vitae magnam
+            perferendis expedita eligendi a ullam quidem odit reiciendis exercitationem, pariatur fugit eaque enim
+            soluta aperiam inventore!
+        </p>
+    </div>
+    <span id="arrow-left">←</span>
+    <span id="arrow-right">→</span>
+</div>
+<div id="scroller">
+    <div class="map">
+        <img id="bg" src="src/background.png">
+
+        <img id="c1" class="hover" src="src/click_1.png">
+        <img id="c2" class="hover" src="src/click_2.png">
+        <img id="c3" class="hover" src="src/click_3.png">
+        <img id="c5" class="hover" src="src/click_5.png">
+        <img id="c6" class="hover" src="src/click_6.png">
+        <img id="c7" class="hover" src="src/click_7.png">
+    </div>
+</div>
+
+<style>
+    #scroller::-webkit-scrollbar {
+        display: none;
+    }
+
+    #scroller {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        overflow-x: auto;
+        width: 100vw;
+        height: 100vh;
+    }
+</style>
+
+<script>
+
+    // SCROLL NAV
+    const scroller = document.querySelector('#scroller');
+
+    const FRAME_DURATION = 1000 / 60;
+    const getTime = typeof performance === "function" ? performance.now : Date.now;
+
+    const documentCenter = ($('.map').width() - $(window).width()) / 2;
+
+    scroller.scroll(documentCenter, 0)
+
+
+    const SCROLL_SPEED = 10;
+
+
+    let isScrolling = false;
+    let scrollDirection = null;
+
+    let lastDelta = getTime();
+
+    function scrollDelta() {
+        const now = getTime();
+        const delta = (now - lastDelta) / FRAME_DURATION;
+
+        const toScroll = (scrollDirection == "right" ? 1 : -1) * (SCROLL_SPEED * delta);
+
+        scroller.scroll(scroller.scrollLeft + toScroll, 0)
+        lastDelta = now;
+        if (isScrolling) {
+            requestAnimationFrame(scrollDelta);
+        }
+    }
+
+    $("#scrollRight").mouseover(function () {
+        scrollDirection = "right";
+        isScrolling = true;
+        lastDelta = getTime();
+        $("#tut").fadeOut(500);
+
+        scrollDelta();
+    });
+    $("#scrollLeft").mouseover(function () {
+        scrollDirection = "left";
+        isScrolling = true;
+        lastDelta = getTime();
+        $("#tut").fadeOut(500);
+
+        scrollDelta();
+    });
+    $("#scrollRight").mouseout(function () {
+        isScrolling = false;
+    });
+    $("#scrollLeft").mouseout(function () {
+        isScrolling = false;
+    });
+
+    // HOVER EFFECT
+
+    const TEXT_HOVER_1 = "Flexibiliteit in ontwikkelingen";
+    const TEXT_HOVER_2 = "Modulair Bouwen & CLT";
+    const TEXT_HOVER_3 = "Afname Auto Verkeer";
+    const TEXT_HOVER_5 = "Agro Forestry";
+    const TEXT_HOVER_6 = "Water Veiligheid & Zekerheid";
+    const TEXT_HOVER_7 = "Geothermie";
+
+    $('#c1').click(function () {
+        console.log('123');
+        console.log(this);
+    })
+
+    $(".hover").hover(function () {
+
+        const hoverID = $(this).attr("id");
+
+        $(this).css("filter", "grayscale(0)");
+
+        if (hoverID == "c1") {
+            $("<h2>" + TEXT_HOVER_1 + "</h2>").hide().prependTo(".map").fadeIn(500);
+        } else if (hoverID == "c2") {
+            $("<h2>" + TEXT_HOVER_2 + "</h2>").hide().prependTo(".map").fadeIn(500);
+        } else if (hoverID == "c3") {
+            $("<h2>" + TEXT_HOVER_3 + "</h2>").hide().prependTo(".map").fadeIn(500);
+        } else if (hoverID == "c5") {
+            $("<h2>" + TEXT_HOVER_5 + "</h2>").hide().prependTo(".map").fadeIn(500);
+        } else if (hoverID == "c6") {
+            $("<h2>" + TEXT_HOVER_6 + "</h2>").hide().prependTo(".map").fadeIn(500);
+        } else if (hoverID == "c7") {
+            $("<h2>" + TEXT_HOVER_7 + "</h2>").hide().prependTo(".map").fadeIn(500);
+        }
+
+    }, function () {
+        $("h2").fadeOut("500", function () {
+            $(this).remove();
+        });
+    });
+
+</script>
