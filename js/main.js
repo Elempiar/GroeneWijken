@@ -22,6 +22,12 @@ $(document).ready(function () {
         }, 1000);
     }
 
+    function removeVideo() {
+        setTimeout(function () {
+            $("#intro-video").remove();
+        }, 1000);
+    }
+
     function removeIntro() {
         setTimeout(function () {
             $("#intro").remove();
@@ -36,14 +42,13 @@ $(document).ready(function () {
             $(this).prop("id", "btnOverlay").html("verken de wijk");
             $("#intro-video").fadeOut(1000);
             showText();
+            removeVideo();
         } else if (btnID == "btnOverlay") {
             $("#intro").css("top", "-100vh");
             $("#loader").css("z-index", "8");
             removeIntro();
-
         }
     });
-
 });
 
 
