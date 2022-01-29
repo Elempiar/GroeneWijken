@@ -32,54 +32,6 @@
     </div>
 </div>
 
-
-
-
-<div id="test">
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias vitae sunt fuga magnam temporibus, corrupti
-        debitis saepe et eaque animi consequatur rerum possimus praesentium doloremque. Necessitatibus ipsum aliquam
-        amet
-        excepturi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore saepe eveniet non fugit ea facere
-        voluptas aut, fugiat assumenda quidem explicabo unde, neque ipsum cumque quia est ratione voluptatum voluptatem.
-    </p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias vitae sunt fuga magnam temporibus, corrupti
-        debitis saepe et eaque animi consequatur rerum possimus praesentium doloremque. Necessitatibus ipsum aliquam
-        amet
-        excepturi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore saepe eveniet non fugit ea facere
-        voluptas aut, fugiat assumenda quidem explicabo unde, neque ipsum cumque quia est ratione voluptatum voluptatem.
-    </p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias vitae sunt fuga magnam temporibus, corrupti
-        debitis saepe et eaque animi consequatur rerum possimus praesentium doloremque. Necessitatibus ipsum aliquam
-        amet
-        excepturi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore saepe eveniet non fugit ea facere
-        voluptas aut, fugiat assumenda quidem explicabo unde, neque ipsum cumque quia est ratione voluptatum voluptatem.
-    </p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias vitae sunt fuga magnam temporibus, corrupti
-        debitis saepe et eaque animi consequatur rerum possimus praesentium doloremque. Necessitatibus ipsum aliquam
-        amet
-        excepturi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore saepe eveniet non fugit ea facere
-        voluptas aut, fugiat assumenda quidem explicabo unde, neque ipsum cumque quia est ratione voluptatum voluptatem.
-    </p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias vitae sunt fuga magnam temporibus, corrupti
-        debitis saepe et eaque animi consequatur rerum possimus praesentium doloremque. Necessitatibus ipsum aliquam
-        amet
-        excepturi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore saepe eveniet non fugit ea facere
-        voluptas aut, fugiat assumenda quidem explicabo unde, neque ipsum cumque quia est ratione voluptatum voluptatem.
-    </p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias vitae sunt fuga magnam temporibus, corrupti
-        debitis saepe et eaque animi consequatur rerum possimus praesentium doloremque. Necessitatibus ipsum aliquam
-        amet
-        excepturi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore saepe eveniet non fugit ea facere
-        voluptas aut, fugiat assumenda quidem explicabo unde, neque ipsum cumque quia est ratione voluptatum voluptatem.
-    </p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias vitae sunt fuga magnam temporibus, corrupti
-        debitis saepe et eaque animi consequatur rerum possimus praesentium doloremque. Necessitatibus ipsum aliquam
-        amet
-        excepturi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore saepe eveniet non fugit ea facere
-        voluptas aut, fugiat assumenda quidem explicabo unde, neque ipsum cumque quia est ratione voluptatum voluptatem.
-    </p>
-</div>
-
 <style>
     #scroller::-webkit-scrollbar {
         display: none;
@@ -97,6 +49,7 @@
 <script>
 
     // SCROLL NAV
+
     const scroller = document.querySelector('#scroller');
 
     const FRAME_DURATION = 1000 / 60;
@@ -187,4 +140,72 @@
         });
     });
 
+    // MODAL
+
+    $(".hover").click(function () {
+
+        const hoverID = $(this).attr("id");
+
+        if (hoverID == "c1") {
+            $.ajax({
+                url: '/template-parts/article-1.html',
+                beforeSend: function () {
+
+                },
+                success: function (data) {
+                    $("body").prepend(data);
+                },
+            });
+        } else if (hoverID == "c2") {
+            $.ajax({
+                url: '/template-parts/article-2.html',
+                beforeSend: function () {
+
+                },
+                success: function (data) {
+                    $("body").prepend(data);
+                },
+            });
+        } else if (hoverID == "c3") {
+            $.ajax({
+                url: '/template-parts/article-3.html',
+                beforeSend: function () {
+
+                },
+                success: function (data) {
+                    $("body").prepend(data);
+                },
+            });
+        } else if (hoverID == "c5") {
+            $.ajax({
+                url: '/template-parts/article-5.html',
+                beforeSend: function () {
+
+                },
+                success: function (data) {
+                    $("body").prepend(data);
+                },
+            });
+        } else if (hoverID == "c6") {
+            $.ajax({
+                url: '/template-parts/article-6.html',
+                beforeSend: function () {
+
+                },
+                success: function (data) {
+                    $("body").prepend(data);
+                },
+            });
+        } else if (hoverID == "c7") {
+            $.ajax({
+                url: '/template-parts/article-7.html',
+                beforeSend: function () {
+
+                },
+                success: function (data) {
+                    $("body").prepend(data);
+                },
+            });
+        }
+    });
 </script>

@@ -88,7 +88,7 @@ body{
   font-family: 'Roboto', sans-serif;
   font-size: 16pt;
 }
-h1, h2, h3, h4, .btn{
+h1, h2, h3, h4, h5, .btn{
   font-family: 'Exo 2', sans-serif;
 }
 .btn{
@@ -103,10 +103,6 @@ h1, h2, h3, h4, .btn{
   font-size: 1.3em;
   font-weight: 800;
   line-height: 30px;
-  position: absolute;
-  bottom: 100px;
-  left: 50%;
-  transform: translateX(-50%);
   cursor: pointer;
   transition: .5s ease all;
   transition-property: background-color, color;
@@ -114,6 +110,12 @@ h1, h2, h3, h4, .btn{
 .btn:hover{
   background: rgba(238, 238, 238, 1);
   color: rgb(36, 157, 86);
+}
+#intro .btn{
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 #intro{
   height: 100vh;
@@ -245,6 +247,96 @@ h2{
 }
 
 
+  /* MODAL */
+
+.modal-back{
+  z-index: 9;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.6);
+}
+.modal{
+  background: white;
+  position: fixed;
+  z-index: 10;
+  transform: translateX(-50%);
+  top: 120px;
+  left: 50%;
+  height: 70vh;
+  width: 70vw;
+  max-width: 1500px;
+  overflow: scroll;
+  border-radius: 10px;
+  border: 5px solid white;
+  overflow-x: hidden;
+  padding: 40px;
+  color: black;
+}
+.modal .close{
+  position: fixed;
+  width: 16px;
+  height: 16px;
+  right: 3em;
+  color: black;
+  cursor: pointer;
+}
+.close svg{
+  width: 18px;
+  height: 18px;
+}
+.modal article{
+  width: 60%;
+  margin: 0;
+  padding-top: 3em;
+  margin-bottom: 5em;
+}
+.modal article h5{
+  font-size: 1.5em;
+  margin-bottom: 1.5em;
+}
+.modal img{
+  position: fixed;
+  right: 3em;
+  top: 10em;
+  width: 30%;;
+}
+.modal .btn{
+  color: #292929;
+  border-color: #292929;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.modal .btn:hover{
+  background: #292929;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: rgba(0,0,0,0);
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  margin-right: 5px;
+}
+::-webkit-scrollbar:hover {
+  background-color: rgba(0, 0, 0, 0.09);
+}
+::-webkit-scrollbar-thumb:vertical {
+  background: rgba(0,0,0,0.5);
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+}
+::-webkit-scrollbar-thumb:vertical:active {
+  background: rgba(0,0,0,0.61);
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+}
+
+
   /* LOADING SCREEN  */
 
 #loader{
@@ -355,47 +447,4 @@ h2{
 }
 #mobileError{
   display: none;
-}
-
-
-
-
-
-#test{
-  background: white;
-  position: fixed;
-  z-index: 6;
-  transform: translateX(-50%);
-  top: 120px;
-  left: 50%;
-  height: 800px;
-  overflow: scroll;
-  border-radius: 10px;
-  border: 5px solid white;
-  overflow-x: hidden;
-  padding: 40px;
-  color: black;
-}
-
-::-webkit-scrollbar {
-  width: 8px;
-  background-color: rgba(0,0,0,0);
-  -webkit-border-radius: 100px;
-  border-radius: 100px;
-  margin-right: 5px;
-}
-::-webkit-scrollbar:hover {
-  background-color: rgba(0, 0, 0, 0.09);
-}
-::-webkit-scrollbar-thumb:vertical {
-  /* This is the EXACT color of Mac OS scrollbars. 
-     Yes, I pulled out digital color meter */
-  background: rgba(0,0,0,0.5);
-  -webkit-border-radius: 100px;
-  border-radius: 100px;
-}
-::-webkit-scrollbar-thumb:vertical:active {
-  background: rgba(0,0,0,0.61); /* Some darker color when you click it */
-  -webkit-border-radius: 100px;
-  border-radius: 100px;
 }

@@ -70,19 +70,3 @@ $.ajax({
         });
     },
 });
-
-
-
-
-
-
-
-
-const tester = document.querySelector('#test');
-
-$(document).scroll(function () {
-
-
-    console.log("test");
-
-})
