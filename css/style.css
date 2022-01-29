@@ -291,7 +291,7 @@ h2{
   width: 60%;
   margin: 0;
   padding-top: 3em;
-  margin-bottom: 5em;
+  margin-bottom: 3em;
 }
 .modal article h5{
   font-size: 1.5em;
@@ -303,16 +303,8 @@ h2{
   top: 10em;
   width: 30%;;
 }
-.modal .btn{
-  color: #249D57;
-  border-color: #249D57;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.modal .btn:hover{
-  background: #249D57;
-  color: white;
+.modal img:nth-of-type(2){
+  top: calc(10em + 20em);
 }
 
 ::-webkit-scrollbar {
