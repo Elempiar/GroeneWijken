@@ -304,14 +304,14 @@ h2{
   width: 30%;;
 }
 .modal .btn{
-  color: #292929;
-  border-color: #292929;
+  color: #249D57;
+  border-color: #249D57;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
 .modal .btn:hover{
-  background: #292929;
+  background: #249D57;
   color: white;
 }
 
@@ -326,12 +326,12 @@ h2{
   background-color: rgba(0, 0, 0, 0.09);
 }
 ::-webkit-scrollbar-thumb:vertical {
-  background: rgba(0,0,0,0.5);
+  background: #249d56c7;
   -webkit-border-radius: 100px;
   border-radius: 100px;
 }
 ::-webkit-scrollbar-thumb:vertical:active {
-  background: rgba(0,0,0,0.61);
+  background: #249d56;
   -webkit-border-radius: 100px;
   border-radius: 100px;
 }
@@ -424,7 +424,7 @@ h2{
 }
 
   /* DOS MOBILE  */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1050px) {
   #scrollLeft, #scrollRight, #tut, #scroller, #loader, #intro{
     display: none;
   }
