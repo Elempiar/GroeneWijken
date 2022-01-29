@@ -27,6 +27,10 @@ html {
 #tut h3{
   color: black;
 }
+#tut p{
+  font-size: 1.1em;
+  font-weight: 700;
+}
 #tut span{
   position: relative;
   top: 50%;
@@ -146,6 +150,8 @@ h1, h2, h3, h4, h5, .btn{
   transform: translate(-50%, -50%);
   width: 60vw;
   height: calc(60vw / 16 * 9);
+}
+#intro-video iframe{
   border-radius: 20px;
 }
 .overlay-text{
@@ -427,13 +433,15 @@ h2{
     background: linear-gradient(-45deg, #249D57, #196e50);
     text-align: center;
   }
-  #mobileError p{
+  #mobileContainer{
     display: block;
     position: fixed;
     top: 50vh;
     left: 50vw;
     width: 80%;
     transform: translate(-50%, -50%);
+  }
+  #mobileContainer p{
     font-family: 'Exo 2', sans-serif;
   }
 }
