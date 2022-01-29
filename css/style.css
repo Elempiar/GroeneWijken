@@ -149,7 +149,9 @@ h1, h2, h3, h4, h5, .btn{
   left: 50%;
   transform: translate(-50%, -50%);
   width: 60vw;
+  max-width: 1300px;
   height: calc(60vw / 16 * 9);
+  max-height: calc(1300px / 16 * 9);
 }
 #intro-video iframe{
   border-radius: 20px;
