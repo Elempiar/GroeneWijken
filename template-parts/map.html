@@ -15,7 +15,7 @@
     <div class="map">
         <img id="bg" src="src/background.png">
 
-        <img id="c1" class="hover" src="src/click_1.png">
+        <div id="c1" class="hover"></div>
         <img id="c2" class="hover" src="src/click_2.png">
         <img id="c3" class="hover" src="src/click_3.png">
         <img id="c5" class="hover" src="src/click_5.png">
@@ -100,11 +100,6 @@
     const TEXT_HOVER_5 = "Agroforestry";
     const TEXT_HOVER_6 = "Water Veiligheid & Zekerheid";
     const TEXT_HOVER_7 = "Geothermie";
-
-    $('#c1').click(function () {
-        console.log('123');
-        console.log(this);
-    })
 
     $(".hover").hover(function () {
 

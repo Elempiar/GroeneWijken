@@ -218,15 +218,31 @@ h2{
   z-index: 2;
 }
 .hover:hover{
-  -webkit-transform: scale(1.05); 
+  /* -webkit-transform: scale(1.05); 
   -moz-transform: scale(1.05);
   -o-transform: scale(1.05);
-  transform: scale(1.05);
+  transform: scale(1.05); */
 }
 #c1{
   position: absolute;
-  bottom: 320px;
-  left: 243px;
+  bottom: 0px;
+  left: -49px;
+  width: 1080px;
+  height: 920px;
+  /* transform: translate(-50%, -50%); */
+  background-image: url("../src/click_1.png");
+  background-size: 50%;
+  border-radius: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 100%;
+  border: 0px solid black;
+}
+#c1:hover{
+  background-image: url("../src/ani1.gif");
+  border-radius: 50%;
+  background-size: 100%;
+  border: 5px solid black;
 }
 #c2{
   position: absolute;
