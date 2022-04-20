@@ -372,7 +372,28 @@ h2{
   border-radius: 100px;
 }
 
+.tab{
+  display: none;
+}
 
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  background-color: green;
+}
+
+#prevBtn{
+  display: none;
+}
   /* LOADING SCREEN  */
 
 #loader{
