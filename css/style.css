@@ -212,62 +212,82 @@ h2{
 }
 
 .hover{
-  filter: grayscale(100);
-  transition: 1s ease all;
   cursor: pointer;
   z-index: 2;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 5px solid rgba(0, 0, 0, 0);
+  width: 900px;
+  height: 800px;
 }
 .hover:hover{
-  /* -webkit-transform: scale(1.05); 
-  -moz-transform: scale(1.05);
-  -o-transform: scale(1.05);
-  transform: scale(1.05); */
+  border: 5px solid rgba(0, 0, 0, 1);
 }
 #c1{
   position: absolute;
-  bottom: 0px;
-  left: -49px;
-  width: 1080px;
-  height: 920px;
-  /* transform: translate(-50%, -50%); */
+  bottom: 140px;
+  left: 80px;
   background-image: url("../src/click_1.png");
-  background-size: 50%;
-  border-radius: 0;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 100%;
-  border: 0px solid black;
+  
 }
 #c1:hover{
-  background-image: url("../src/ani1.gif");
-  border-radius: 50%;
-  background-size: 100%;
-  border: 5px solid black;
+  background-image: url("../src/click_1.gif");
+  background-size: 130%;
 }
 #c2{
   position: absolute;
-  bottom: 312px;
-  left: 1070px;
+  bottom: 130px;
+  left: 920px;
+  background-image: url("../src/click_2.png");
+}
+#c2:hover{
+  background-image: url("../src/click_2.gif");
+  background-size: 130%;
 }
 #c3{
   position: absolute;
-  bottom: 162px;
-  left: 2688px;
+  bottom: 50px;
+  left: 2400px;
+  background-image: url("../src/click_3.png");
+  background-position: 50% 80%;
+}
+#c3:hover{
+  background-image: url("../src/click_3.gif");
+  background-size: 150%;
+  background-position: bottom;
 }
 #c5{
   position: absolute;
-  bottom: 175px;
-  right: 2197px;
+  bottom: 40px;
+  right: 2250px;
+  background-size: 100%;
+  background-image: url("../src/click_5.png");
+}
+#c5:hover{
+  background-image: url("../src/click_5.gif");
+  background-size: 150%;
+  background-position: bottom;
 }
 #c6{
   position: absolute;
-  bottom: 155px;
+  bottom: 30px;
   right: 1236px;
+  background-image: url("../src/click_6.png");
+}
+#c6:hover{
+  background-image: url("../src/click_6.gif");
+  background-size: 110%;
 }
 #c7{
   position: absolute;
-  bottom: 320px;
-  right: 140px;
+  bottom: 200px;
+  right: 0px;
+  background-image: url("../src/click_7.png");
+}
+#c7:hover{
+  background-image: url("../src/click_7.gif");
+  background-size: 110%;
 }
 
 
