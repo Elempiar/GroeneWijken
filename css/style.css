@@ -70,7 +70,7 @@ html {
 }
 #scrollRight {
   height: 100vh;
-  width: 15%;
+  width: 10%;
   position: fixed;
   top: 0;
   right: 0;
@@ -78,7 +78,7 @@ html {
 }
 #scrollLeft {
   height: 100vh;
-  width: 15%;
+  width: 10%;
   position: fixed;
   top: 0;
   left: 0;
@@ -96,30 +96,27 @@ h1, h2, h3, h4, h5, .btn{
   font-family: 'Exo 2', sans-serif;
 }
 .btn{
-  padding: 15px 60px;
-  width: 300px;
-  border: 4px solid #eee;
-  border-radius: 5px;
-  background: rgba(238, 238, 238, 0);
-  color: rgb(238, 238, 238);
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 1.3em;
-  font-weight: 800;
-  line-height: 30px;
+  width: 287px;
+  height: 113px;
   cursor: pointer;
   transition: .5s ease all;
   transition-property: background-color, color;
 }
 .btn:hover{
-  background: rgba(238, 238, 238, 1);
-  color: rgb(36, 157, 86);
 }
 #intro .btn{
   position: absolute;
   bottom: 100px;
   left: 50%;
   transform: translateX(-50%);
+}
+#btnContinue{
+  background-image: url(../src/btnContinue.png);
+  background-size: cover;
+}
+#btnOverlay{
+  background-image: url(../src/btnOverlay.png);
+  background-size: cover;
 }
 #intro{
   height: 100vh;
@@ -179,6 +176,7 @@ h1{
 h3{
   font-weight: 800;
   font-size: 3em;
+  line-height: 1em;
   color: #eee;
   margin-bottom: 1em;
 }
@@ -199,18 +197,23 @@ p{
   z-index: 1;
   display: block;
 }
-h2{
+.hoverTitle{
   position: fixed;
-  top: 100px;
+  top: 50px;
   left: 50%;
   transform: translateX(-50%);
-  font-weight: 800;
-  font-size: 2.5em;
-  color: rgba(0, 0, 0, .3);
+  color: rgba(0, 0, 0, .6);
   z-index: 3;
   width: 100%;
 }
-
+.hoverTitle h2{
+  font-weight: 800;
+  font-size: 2.5rem;
+  margin-bottom: .5rem;
+}
+.hoverTitle p{
+  font-size: 1.2rem;
+}
 .hover{
   cursor: pointer;
   z-index: 2;
@@ -281,9 +284,11 @@ h2{
 }
 #c7{
   position: absolute;
-  bottom: 200px;
+  bottom: 250px;
   right: 0px;
   background-image: url("../src/click_7.png");
+  width: 800px;
+  height: 700px;
 }
 #c7:hover{
   background-image: url("../src/click_7.gif");
@@ -306,49 +311,129 @@ h2{
   background: white;
   position: fixed;
   z-index: 10;
-  transform: translateX(-50%);
-  top: 120px;
+  transform: translate(-50%, -50%);
+  top: 50%;
   left: 50%;
-  height: 70vh;
+  height: 60vh;
   width: 70vw;
   max-width: 1500px;
   overflow: scroll;
   border-radius: 10px;
-  border: 5px solid white;
   overflow-x: hidden;
-  padding: 40px;
   color: black;
+}
+#modal_1{
+  background-image: url(../src/modal_1.png);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position-x: -200px;
+  background-position-y: -50px;
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  opacity: .2;
+}
+#modal_2{
+  background-image: url(../src/modal_2.png);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position-x: -200px;
+  background-position-y: -50px;
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  opacity: .2;
+}
+#modal_3{
+  background-image: url(../src/modal_3.png);
+  background-repeat: no-repeat;
+  background-size: 55%;
+  background-position-x: -200px;
+  background-position-y: -40px;
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  opacity: .15;
+}
+#modal_5{
+  background-image: url(../src/modal_5.png);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position-x: -200px;
+  background-position-y: -50px;
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  opacity: .2;
+}
+#modal_6{
+  background-image: url(../src/modal_6.png);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position-x: -300px;
+  background-position-y: 0px;
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  opacity: .2;
+}
+#modal_7{
+  background-image: url(../src/modal_7.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position-x: -200px;
+  background-position-y: -100px;
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  opacity: .2;
 }
 .modal .close{
   position: fixed;
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   right: 3em;
   color: black;
   cursor: pointer;
+  z-index: 10;
+  top: 35px;
 }
 .close svg{
   width: 18px;
   height: 18px;
 }
 .modal article{
-  width: 60%;
-  margin: 0;
-  padding-top: 3em;
-  margin-bottom: 3em;
+  width: 90%;
+  height: 80%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  padding: 40px;
 }
 .modal article h5{
-  font-size: 1.5em;
+  font-size: 2rem;
   margin-bottom: 1.5em;
+  position: absolute;
+  width: 100%;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.modal article h6{
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+.modal article a{
+  color: #249d56;
+  text-decoration: underline;
 }
 .modal img{
-  position: fixed;
-  right: 3em;
-  top: 10em;
-  width: 30%;;
+  width: 49%;
+  border-radius: 10px;
 }
-.modal img:nth-of-type(2){
-  top: calc(10em + 20em);
+.modal .bigImg{
+  width: 75%;
 }
 
 ::-webkit-scrollbar {
@@ -374,6 +459,52 @@ h2{
 
 .tab{
   display: none;
+  width: 70%;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#nextBtn{
+  position: absolute;
+  right: 20px;
+  top: 45%;
+  width: 60px;
+  height: 60px;
+  background-image: url(../src/nextBtn.png);
+  background-size: contain;
+  border: none;
+  background-color: rgba(0,0,0,0);
+  transition: all ease .4s;
+  cursor: pointer;
+}
+#nextBtn:hover{
+  transform: scale(1.1);
+}
+#prevBtn{
+  position: absolute;
+  left: 20px;
+  top: 45%;
+  width: 60px;
+  height: 60px;
+  background-image: url(../src/prevBtn.png);
+  background-size: contain;
+  border: none;
+  background-color: rgba(0,0,0,0);
+  transition: all ease .4s;
+  cursor: pointer;
+}
+#prevBtn:hover{
+  transform: scale(1.1);
+}
+
+.tabSteps{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .step {
@@ -384,11 +515,13 @@ h2{
   border: none;
   border-radius: 50%;
   display: inline-block;
-  opacity: 0.5;
+  opacity: .5;
+  transition: all ease .4s;
 }
 
 .step.active {
-  background-color: green;
+  background-color: #0F643C;
+  opacity: 1;
 }
 
 #prevBtn{

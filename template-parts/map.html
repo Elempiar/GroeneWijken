@@ -4,8 +4,7 @@
     <div class="overlay-text">
         <h3>Ontdek!</h3>
         <p>
-            Om de wijk te verkennen, kun je met je muis naar links of rechts bewegen! Door op de grijze illustraties te
-            klikken kun je meer te weten komen over de verschillende onderwerpen!
+            Om de wijk te verkennen, kun je met je muis naar links of rechts bewegen! Hover over de huizen heen en laat je verrassen door deze duurzame wijk.
         </p>
     </div>
     <span id="arrow-left">←</span>
@@ -94,12 +93,18 @@
 
     // HOVER EFFECT
 
-    const TEXT_HOVER_1 = "Flexibiliteit in ontwikkelingen";
-    const TEXT_HOVER_2 = "Modulair Bouwen & CLT";
-    const TEXT_HOVER_3 = "Afname Auto Verkeer";
-    const TEXT_HOVER_5 = "Agroforestry";
-    const TEXT_HOVER_6 = "Water Veiligheid & Zekerheid";
-    const TEXT_HOVER_7 = "Geothermie";
+    const TITLE_1 = "Flexibiliteit in ontwikkelingen";
+    const TEXT_1 = "Momenteel zijn er verschillende duurzame ontwikkelingen bezig, niet alleen zonne-energie!";
+    const TITLE_2 = "Modulair Bouwen & CLT";
+    const TEXT_2 = "Modulair bouwen een nieuwe vorm van duurzaamheid, leer meer over hoe jij modulair kan bouwen.";
+    const TITLE_3 = "Afname Auto Verkeer";
+    const TEXT_3 = "Auto delen met je buurman is tegenwoordig normaler dan je denkt! En jij kan dit ook doen!";
+    const TITLE_5 = "Agroforestry";
+    const TEXT_5 = "Agroforestry wordt gezien als een duurzame en innovatieve vorm van landbouw. Maar hoe werkt het eigenlijk?";
+    const TITLE_6 = "Water Veiligheid & Zekerheid";
+    const TEXT_6 = "Nederland heeft veel water, tegenwoordig kan dit ook energie opwekken!";
+    const TITLE_7 = "Geothermie";
+    const TEXT_7 = "Huizen verwarmen doormiddel van aardwarmte, bij geothermie zien we dit steeds vaker!";
 
     $(".hover").hover(function () {
 
@@ -108,21 +113,21 @@
         $(this).css("filter", "grayscale(0)");
 
         if (hoverID == "c1") {
-            $("<h2>" + TEXT_HOVER_1 + "</h2>").hide().prependTo(".map").fadeIn(500);
+            $("<div class='hoverTitle'><h2>" + TITLE_1 + "</h2><p>" + TEXT_1 + "</p></div>").hide().prependTo(".map").fadeIn(500);
         } else if (hoverID == "c2") {
-            $("<h2>" + TEXT_HOVER_2 + "</h2>").hide().prependTo(".map").fadeIn(500);
+            $("<div class='hoverTitle'><h2>" + TITLE_2 + "</h2><p>" + TEXT_2 + "</p></div>").hide().prependTo(".map").fadeIn(500);
         } else if (hoverID == "c3") {
-            $("<h2>" + TEXT_HOVER_3 + "</h2>").hide().prependTo(".map").fadeIn(500);
+            $("<div class='hoverTitle'><h2>" + TITLE_3 + "</h2><p>" + TEXT_3 + "</p></div>").hide().prependTo(".map").fadeIn(500);
         } else if (hoverID == "c5") {
-            $("<h2>" + TEXT_HOVER_5 + "</h2>").hide().prependTo(".map").fadeIn(500);
+            $("<div class='hoverTitle'><h2>" + TITLE_5 + "</h2><p>" + TEXT_5 + "</p></div>").hide().prependTo(".map").fadeIn(500);
         } else if (hoverID == "c6") {
-            $("<h2>" + TEXT_HOVER_6 + "</h2>").hide().prependTo(".map").fadeIn(500);
+            $("<div class='hoverTitle'><h2>" + TITLE_6 + "</h2><p>" + TEXT_6 + "</p></div>").hide().prependTo(".map").fadeIn(500);
         } else if (hoverID == "c7") {
-            $("<h2>" + TEXT_HOVER_7 + "</h2>").hide().prependTo(".map").fadeIn(500);
+            $("<div class='hoverTitle'><h2>" + TITLE_7 + "</h2><p>" + TEXT_7 + "</p></div>").hide().prependTo(".map").fadeIn(500);
         }
 
     }, function () {
-        $("h2").fadeOut("500", function () {
+        $('.hoverTitle').fadeOut("500", function () {
             $(this).remove();
         });
     });
