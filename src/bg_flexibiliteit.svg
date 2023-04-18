@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{fill:#91B5D3;}
+	.st2{fill:#026BAD;}
+	.st3{display:none;fill:#026BAD;}
+	.st4{display:inline;fill:#D4E2E8;}
+	.st5{display:inline;fill:#E5F4F9;}
+	.st6{display:inline;fill:#D3D3D3;}
+	.st7{display:inline;fill:#40B0E5;}
+	.st8{display:inline;}
+	.st9{fill:#40B0E5;}
+	.st10{fill:#E34141;}
+	.st11{fill:#AF9489;}
+	.st12{fill:#9B8378;}
+	.st13{display:inline;fill:#436E39;}
+	.st14{display:inline;fill:#665547;}
+	.st15{display:inline;fill:#4C9935;}
+	.st16{fill:none;}
+	.st17{fill:#715A50;}
+	.st18{font-family:'Roboto-Black';}
+	.st19{font-size:64px;}
+	.st20{fill:#6BAA41;}
+	.st21{display:inline;fill:#E34141;}
+</style>
+<g id="refs" class="st0">
+	
+		<image style="overflow:visible;" width="1294" height="732" xlink:href="61F5C27C.jpg"  transform="matrix(1.5064 0 0 1.5064 -14.6596 -11.353)">
+	</image>
+	
+		<image style="overflow:visible;" width="1331" height="744" xlink:href="61F5C27D.jpg"  transform="matrix(1.4843 0 0 1.4843 -27.7872 -12.1515)">
+	</image>
+	
+		<image style="overflow:visible;" width="1320" height="745" xlink:href="61F5C27B.jpg"  transform="matrix(1.4823 0 0 1.4823 -17.7981 -11.9813)">
+	</image>
+	
+		<image style="display:inline;overflow:visible;" width="1013" height="385" xlink:href="61F5C284.jpg"  transform="matrix(1 0 0 1 208.5426 241.9468)">
+	</image>
+</g>
+<g id="sky">
+	<rect x="-5" y="-5" class="st1" width="1930" height="1090"/>
+</g>
+<g id="water">
+	<rect x="-5" y="882.1" class="st2" width="1930" height="202.9"/>
+	<rect x="-5" y="791.2" class="st3" width="1930" height="202.9"/>
+</g>
+<g id="windmill_1" class="st0">
+	<rect x="1719.5" y="389.5" class="st4" width="25.5" height="600.5"/>
+	<path class="st5" d="M1833.1,335.7l-34.1,26.2l-49.1,37.8l-8.2,61.4l-5.7,42.6c-1,7.7-6.7,7.7-7.8,0l-5.7-42.6l-8.2-61.4l-49-37.8
+		l-34.1-26.2c-6.1-4.7-3.3-9.7,3.9-6.7l39.8,16.4l57.3,23.6l57.2-23.6l39.8-16.4C1836.4,326.1,1839.2,331,1833.1,335.7z"/>
+	<circle class="st4" cx="1732.2" cy="389.5" r="18"/>
+	<circle class="st5" cx="1732.2" cy="389.5" r="16"/>
+</g>
+<g id="windmill_2" class="st0">
+	<rect x="1602.5" y="389.5" class="st4" width="25.5" height="600.5"/>
+	<path class="st5" d="M1716.1,335.7l-34.1,26.2l-49.1,37.8l-8.2,61.4l-5.7,42.6c-1,7.7-6.7,7.7-7.8,0l-5.7-42.6l-8.2-61.4l-49-37.8
+		l-34.1-26.2c-6.1-4.7-3.3-9.7,3.9-6.7l39.8,16.4l57.3,23.6l57.2-23.6l39.8-16.4C1719.4,326.1,1722.2,331,1716.1,335.7z"/>
+	<circle class="st4" cx="1615.2" cy="389.5" r="18"/>
+	<circle class="st5" cx="1615.2" cy="389.5" r="16"/>
+</g>
+<g id="geothermie" class="st0">
+	<path class="st6" d="M673.5,857.3H373.2V247.5h196.1c16.4,16.4,30.8,34.6,43.3,54.1c9.8,15.2,18.4,31.3,26.1,48
+		c3,6.6,5.9,13.2,8.6,20c6.3,15.6,11.7,31.7,16.5,48c1.9,6.6,3.7,13.3,5.4,20c4,15.8,7.4,31.9,10.2,48c1.2,6.7,2.3,13.3,3.2,20
+		c2.4,16,4.3,32.1,5.7,48C702.5,711.8,673.5,857.3,673.5,857.3z"/>
+	<path class="st7" d="M638.7,349.7H460.2c-13.3,0-24-10.7-24-24v0c0-13.3,10.7-24,24-24h152.3C622.4,316.9,631,333,638.7,349.7z"/>
+	<path class="st7" d="M663.7,417.7H460.2c-13.3,0-24-10.7-24-24v0c0-13.3,10.7-24,24-24h187C653.5,385.3,659,401.3,663.7,417.7z"/>
+	<path class="st7" d="M679.4,485.7H460.2c-13.3,0-24-10.7-24-24v0c0-13.3,10.7-24,24-24h208.9C673.2,453.5,676.6,469.6,679.4,485.7z
+		"/>
+	<path class="st7" d="M688.3,553.7H460.2c-13.3,0-24-10.7-24-24l0,0c0-13.3,10.7-24,24-24h222.4C685,521.7,686.9,537.8,688.3,553.7z
+		"/>
+	<g class="st8">
+		<path class="st9" d="M531.3,793.1l18-10.4l18-10.4c2.7-1.5,6,0.4,6,3.5v12.1c31.2-8.7,54.2-37.4,54.2-71.3c0-40.8-33.2-74-74-74
+			c-3.3,0-6-2.7-6-6c0-3.3,2.7-6,6-6c47.4,0,86,38.6,86,86c0,40.6-28.3,74.7-66.2,83.7v17.1c0,3.1-3.3,5-6,3.5l-18-10.4l-18-10.4
+			C528.6,798.5,528.6,794.7,531.3,793.1z"/>
+	</g>
+	<g class="st8">
+		<path class="st10" d="M435.5,716.6c0-39.9,27.3-73.5,64.1-83.2v-17.6c0-3.1,3.3-5,6-3.5l18,10.4l18,10.4c2.7,1.5,2.7,5.4,0,6.9
+			l-36,20.8c-2.7,1.5-6-0.4-6-3.5v-11.5c-30.2,9.3-52.1,37.5-52.1,70.7c0,40.8,33.2,74,74,74c3.3,0,6,2.7,6,6c0,3.3-2.7,6-6,6
+			C474,802.6,435.5,764,435.5,716.6z"/>
+	</g>
+</g>
+<g id="house_1">
+	<rect x="570.1" y="669.8" class="st11" width="230.8" height="187.4"/>
+	<rect x="570.1" y="763.6" class="st12" width="230.8" height="93.7"/>
+	<path class="st9" d="M800.9,822.2H674c-7.8,0-14.1-6.3-14.1-14.1l0,0c0-7.8,6.3-14.1,14.1-14.1h126.8V822.2z"/>
+	<path class="st9" d="M570.1,705h126.8c7.8,0,14.1,6.3,14.1,14.1l0,0c0,7.8-6.3,14.1-14.1,14.1H570.1V705z"/>
+</g>
+<g id="tree_2" class="st0">
+	<ellipse class="st13" cx="700.9" cy="517.9" rx="84.2" ry="54"/>
+	<ellipse class="st13" cx="859.3" cy="517.9" rx="130.4" ry="63.9"/>
+	<path class="st14" d="M669,858.3c0,0,63,0,64.9-114.2s-3.7-122.9-8.1-131c-4.4-8.1-25.2-52.4-24.1-71.1h44.7c0,0-8.1,73,17.5,79.2
+		c25.6,6.2,40.6-64.9,40.6-68H840c0,0-33.7,73-40.6,81.1c-6.9,8.1-18.7,21.2-20.6,51.2c-1.9,29.9-7.5,169.1,20,172.8H669z"/>
+	<ellipse class="st15" cx="700.9" cy="498" rx="84.2" ry="54"/>
+	<ellipse class="st15" cx="859.3" cy="498" rx="130.4" ry="63.9"/>
+	<ellipse class="st15" cx="785.1" cy="438.1" rx="130.4" ry="63.9"/>
+	<ellipse class="st15" cx="815.7" cy="390.1" rx="94.8" ry="63.9"/>
+	<ellipse class="st15" cx="881.2" cy="438.1" rx="75.5" ry="63.9"/>
+</g>
+<g id="house_2">
+	<rect x="308.3" y="669.8" class="st11" width="230.8" height="183.8"/>
+	<rect x="423.7" y="763.6" class="st12" width="115.4" height="93.7"/>
+	<rect x="423.7" y="622.9" class="st12" width="115.4" height="46.9"/>
+	<rect x="308.3" y="763.7" class="st12" width="18.7" height="93.5"/>
+	
+		<rect x="366" y="724.1" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 1148.4054 397.6491)" class="st12" width="18.7" height="97.8"/>
+	<path class="st9" d="M539.1,822.2h-75.9c-7.8,0-14.1-6.3-14.1-14.1l0,0c0-7.8,6.3-14.1,14.1-14.1h75.9V822.2z"/>
+	<path class="st9" d="M539.1,653.3h-82.9c-3.9,0-7-3.1-7-7v0c0-3.9,3.1-7,7-7h82.9V653.3z"/>
+	<path class="st9" d="M308.3,705h126.8c7.8,0,14.1,6.3,14.1,14.1l0,0c0,7.8-6.3,14.1-14.1,14.1H308.3V705z"/>
+</g>
+<g id="tree_1" class="st0">
+	<ellipse class="st13" cx="321.9" cy="579.7" rx="68.9" ry="44.2"/>
+	<ellipse class="st13" cx="451.6" cy="579.7" rx="106.7" ry="52.3"/>
+	<path class="st14" d="M295.8,858.3c0,0,51.6,0,53.1-93.4s-3.1-100.6-6.6-107.2c-3.6-6.6-20.6-42.9-19.8-58.2h36.6
+		c0,0-6.6,59.7,14.3,64.9c20.9,5.1,33.2-53.1,33.2-55.7h29.1c0,0-27.6,59.7-33.2,66.4c-5.6,6.6-15.3,17.4-16.9,41.9
+		c-1.5,24.5-6.1,138.4,16.3,141.4H295.8z"/>
+	<ellipse class="st15" cx="321.9" cy="563.4" rx="68.9" ry="44.2"/>
+	<ellipse class="st15" cx="451.6" cy="563.4" rx="106.7" ry="52.3"/>
+	<ellipse class="st15" cx="390.8" cy="514.4" rx="106.7" ry="52.3"/>
+	<ellipse class="st15" cx="415.8" cy="475.1" rx="77.6" ry="52.3"/>
+	<ellipse class="st15" cx="469.4" cy="514.4" rx="61.8" ry="52.3"/>
+</g>
+<g id="house_2_copy">
+	<rect x="1014.9" y="605.1" class="st11" width="310.5" height="247.2"/>
+	<rect x="1170.1" y="731.2" class="st12" width="155.2" height="126.1"/>
+	<rect x="1325.3" y="542" class="st12" width="310.5" height="63"/>
+	<rect x="1014.9" y="731.3" class="st12" width="25.2" height="125.8"/>
+	
+		<rect x="1092.5" y="678.2" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 1849.0669 -361.1687)" class="st12" width="25.2" height="131.5"/>
+	<path class="st9" d="M1635.8,582.9h-234.2c-4.3,0-7.7-3.4-7.7-7.7v-3.5c0-4.3,3.4-7.7,7.7-7.7h234.2V582.9z"/>
+	<path class="st9" d="M1014.9,652.4H1189c8.5,0,15.4,6.9,15.4,15.4v7c0,8.5-6.9,15.4-15.4,15.4h-174.1V652.4z"/>
+</g>
+<g id="house_1_copy">
+	<rect x="1325.3" y="605.1" class="st11" width="310.5" height="252.1"/>
+	<rect x="1325.3" y="731.2" class="st12" width="310.5" height="126.1"/>
+	<path class="st9" d="M1635.8,810.1h-295c-8.5,0-15.4-6.9-15.4-15.4v-7c0-8.5,6.9-15.4,15.4-15.4h295V810.1z"/>
+	<rect x="1325.3" y="639.3" class="st16" width="294.1" height="78.4"/>
+	<text transform="matrix(1 0 0 1 1325.3352 687.2732)" class="st17 st18 st19">MALL</text>
+</g>
+<g id="tree_1_copy" class="st0">
+	<ellipse class="st13" cx="1544" cy="579.7" rx="68.9" ry="44.2"/>
+	<ellipse class="st13" cx="1673.7" cy="579.7" rx="106.7" ry="52.3"/>
+	<path class="st14" d="M1517.9,858.3c0,0,51.6,0,53.1-93.4s-3.1-100.6-6.6-107.2s-20.6-42.9-19.8-58.2h36.6c0,0-6.6,59.7,14.3,64.9
+		s33.2-53.1,33.2-55.7h29.1c0,0-27.6,59.7-33.2,66.4c-5.6,6.6-15.3,17.4-16.9,41.9c-1.5,24.5-6.1,138.4,16.3,141.4H1517.9z"/>
+	<ellipse class="st15" cx="1544" cy="563.4" rx="68.9" ry="44.2"/>
+	<ellipse class="st15" cx="1673.7" cy="563.4" rx="106.7" ry="52.3"/>
+	<ellipse class="st15" cx="1612.9" cy="514.4" rx="106.7" ry="52.3"/>
+	<ellipse class="st15" cx="1637.9" cy="475.1" rx="77.6" ry="52.3"/>
+	<ellipse class="st15" cx="1691.5" cy="514.4" rx="61.8" ry="52.3"/>
+</g>
+<g id="grass">
+	<polygon class="st20" points="1860.8,853.5 1802.2,853.5 1772.6,974.4 1751.5,974.4 1633.7,848.1 286.3,848.1 168.5,974.4 
+		147.4,974.4 117.8,853.5 59.2,853.5 32.7,974.4 -5,974.4 -5,1085 1925,1085 1925,974.4 1887.3,974.4 	"/>
+</g>
+<g id="randombitsnbobs" class="st0">
+	<rect x="480.4" y="848.1" class="st21" width="12" height="236.9"/>
+	
+		<rect x="1042.9" y="322.4" transform="matrix(6.123234e-17 -1 1 6.123234e-17 157.976 1939.8831)" class="st21" width="12" height="1137"/>
+	<rect x="1308.4" y="848.1" class="st21" width="12" height="42.9"/>
+	<rect x="1284.4" y="848.1" class="st7" width="12" height="82.6"/>
+	<rect x="1605.4" y="848.1" class="st21" width="12" height="42.9"/>
+	<rect x="1581.4" y="848.1" class="st7" width="12" height="82.6"/>
+	
+		<rect x="1074.2" y="417.4" transform="matrix(6.123234e-17 -1 1 6.123234e-17 149.5717 2010.8406)" class="st7" width="12" height="1026.5"/>
+	<rect x="567" y="848.1" class="st7" width="12" height="236.9"/>
+</g>
+</svg>

@@ -1,43 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=chillax@600,500,300,700,400,200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@1,2&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Groene Wijken</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
-    <script src="js/main.js" defer></script>
-</head>
+  </head>
 
-<body>
-    <div id="mobileError">
+  <body>
+    <div
+      id="site-wrapper"
+      class="d-flex flex-column h-100 justify-content-center"
+    >
+      <div id="mobileError">
         <div id="mobileContainer">
-            <p>Hey! Welkom bij de Groene Wijk!</p>
-            <p>Voor de beste ervaring raden wij aan om deze media story te bekijken op een desktop of laptop, dus pak
-                deze er even bij!</p>
-            <p>Tot zo!</p>
+          <p>Hey! Welkom bij de Groene Wijk!</p>
+          <p>
+            Voor de beste ervaring raden wij aan om deze media story te bekijken
+            op een desktop of laptop, dus pak deze er even bij!
+          </p>
+          <p>Tot zo!</p>
         </div>
-
+      </div>
+      <div
+        id="outer-wrapper"
+        class="container position-relative h-75 center-block text-center d-flex flex-column justify-content-center align-items-center"
+      >
+        <div id="inner-wrapper" class="text-center w-100"></div>
+        <button
+          type="button"
+          id="btnIntro"
+          data-step="intro-1"
+          class="btn btn-primary fw-bold hidden position-absolute start"
+        >
+          Starten
+        </button>
+      </div>
     </div>
-    <div id="intro">
-        <div id="intro-video">
-            <iframe
-                src="https://player.vimeo.com/video/671740907?h=5e13e75275&amp;badge=0&amp;autopause=0&amp;&color=249D57&player_id=0&title=0&byline=0&portrait=0&amp;app_id=58479"
-                frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
-                style="position:absolute;top:0;left:0;width:100%;height:100%;" title="team 2H.mp4"></iframe>
-        </div>
-        <script src="https://player.vimeo.com/api/player.js"></script>
-        <div class="overlay-text" id="intro-text">
-            <h3>Welkom in de Groene Wijk</h3>
-            <p>Een groene omgeving is een belangrijke sleutel tot een gezondere bevolking; zo ook in deze visuele groene wijk. Door de druk op steden te verminderen en minder mensen naar de steden te trekken, worden er groene wijken gemaakt. Uit onderzoek blijkt dan ook dat meer groen de stress vermindert, de sociale cohesie stimuleert en ook nodigt het mensen uit om actiever te zijn. Er zijn verschillende manieren om wijken groener te maken, denk aan innovatieve ontwikkelingen. Als je zo door onze groene wijk heen loopt zie je deze ontwikkelingen en kan je meer leren over hoe jij je wijk wellicht groener kan maken. Er zijn verschillende organisaties die kunnen helpen om de eerste stap te zetten.</p>
-            <p>Ook heb je wellicht nog niet eens gehoord van verschillende ontwikkelingen en wist je niet eens dat dit bestond. Hier kan je dan ook uitgebreid over lezen.</p>
-        </div>
-        <a class="btn" id="btnContinue">
-        </a>
-    </div>
-</body>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js" defer></script>
+  </body>
 </html>
