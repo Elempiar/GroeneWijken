@@ -364,7 +364,7 @@ p{
 .article article h6{
   font-size: 1.4rem;
   font-weight: 600;
-  margin-bottom: 1em;
+  margin-bottom: 3rem;
 }
 
 .article article a{
@@ -373,12 +373,8 @@ p{
 }
 
 .article img{
-  width: 49%;
   border-radius: 10px;
-}
-
-.article .bigImg{
-  width: 75%;
+  object-fit: cover;
 }
 
 ::-webkit-scrollbar {
