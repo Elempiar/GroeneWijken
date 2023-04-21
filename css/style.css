@@ -160,6 +160,13 @@ body {
 
 /* STYLING */
 
+#topics-weerbaarheid {
+  display: none;
+}
+#topics-duurzaamheid {
+  display: none;
+}
+
 body{
   font-family: 'Satoshi', sans-serif;
   font-size: 16pt;

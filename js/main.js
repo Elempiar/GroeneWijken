@@ -123,9 +123,30 @@ function btnIntro() {
             .removeClass("justify-content-between");
           $("#pages").fadeOut(1000).remove();
           topicSelection();
+          topicIntro();
         },
       });
     }
+  });
+}
+
+// ----- TOPIC INTRO -----
+
+function topicIntro() {
+  $("#btn-weerbaarheid").on("click", function () {
+    $("#intro-weerbaarheid").fadeOut(1000);
+    setTimeout(function () {
+      $("#topics-weerbaarheid").hide().fadeIn(1000);
+      $("#intro-weerbaarheid").remove();
+    }, 1100);
+  });
+
+  $("#btn-duurzaamheid").on("click", function () {
+    $("#intro-duurzaamheid").fadeOut(1000);
+    setTimeout(function () {
+      $("#topics-duurzaamheid").hide().fadeIn(1000);
+      $("#intro-duurzaamheid").remove();
+    }, 1100);
   });
 }
 
